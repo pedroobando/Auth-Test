@@ -1,0 +1,42 @@
+{
+  "name": "apigqlcondominio",
+  "version": "1.0.0",
+  "description": "Api GraphQL para una aplicacion de condominio - usando una base de datos mongodb",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node build/index.js",
+    "dev": "nodemon .",
+    "build": "node_modules/.bin/esbuild . --bundle --platform=node --minify --outfile=build/index.js"
+  },
+  "keywords": [
+    "GraphQL",
+    "Mongodb",
+    "Mongoose",
+    "Apollo-Server",
+    "Condominio",
+    "JsonWebToken",
+    "Express"
+  ],
+  "author": "Pedro Obando <pedroobando@hotmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^3.3.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "graphql": "^15.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "jwks-rsa": "^2.0.4",
+    "mongodb-client-encryption": "^1.2.6",
+    "mongoose": "^6.0.8"
+  },
+  "devDependencies": {
+    "esbuild": "^0.12.17",
+    "eslint": "^7.32.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "graphql-playground-middleware-express": "^1.7.22",
+    "nodemon": "^2.0.12",
+    "prettier": "^2.3.2"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "env": {
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["node"],
+  "extends": ["plugin:prettier/recommended", "prettier"],
+  "parser": "babel-eslint",
+  "rules": {
+    "no-console": "warn",
+    // Best Practices
+    "no-magic-numbers": "off",
+    "vars-on-top": "error",
+    "spaced-comment": "error"
+  }
+}
